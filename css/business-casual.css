@@ -1,0 +1,362 @@
+/*!
+ * Start Bootstrap - Business Casual Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: url('../img/bgsofa.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1.25em;
+    line-height: 1.6;
+    color: #000;
+}
+
+hr {
+    max-width: 400px;
+    border-color: #999999;
+}
+
+.brand,
+.address-bar {
+    display: none;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font: inherit;
+}
+
+.navbar-nav {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.img-full {
+    min-width: 100%;
+}
+
+.brand-before,
+.brand-name {
+    text-transform: capitalize;
+}
+
+.brand-before {
+    margin: 15px 0;
+}
+
+.brand-name {
+    margin: 0;
+    font-size: 4em;
+}
+
+.tagline-divider {
+    margin: 15px auto 3px;
+    max-width: 250px;
+    border-color: #999999;
+}
+
+.box {
+    margin-bottom: 20px;
+    padding: 30px 15px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+.intro-text {
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.img-border {
+    float: none;
+    margin: 0 auto 0;
+    border: #999999 solid 1px;
+}
+
+.img-left {
+    float: none;
+    margin: 0 auto 0;
+}
+
+footer {
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+footer p {
+    margin: 0;
+    padding-top: 30px;
+}
+
+.alsoView .col-sm-3 {
+    margin-top: 25px;
+}
+
+.alsoView>div>a>img {
+    min-width: 216px;
+    min-height: 216px;
+}
+.product-img {
+    height: 360px;
+    margin: 0 auto;
+}
+
+
+@media screen and (min-width:768px) {
+    .brand {
+        display: inherit;
+        margin: 0;
+        padding: 30px 0 10px;
+        text-align: center;
+        text-shadow: 8px 8px 5px rgba(0,0,0,0.5);
+        font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 5em;
+        font-weight: 700;
+        line-height: normal;
+        color: #fff;
+    }
+
+    .top-divider {
+        margin-top: 0;
+    }
+
+    .img-left {
+        float: left;
+        margin-right: 25px;
+    }
+
+    .address-bar {
+        display: inherit;
+        margin: 0;
+        padding: 0 0 40px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        text-transform: uppercase;
+        font-size: 1.25em;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: #fff;
+    }
+
+    .navbar {
+        border-radius: 0;
+    }
+
+    .navbar-header {
+        display: none;
+    }
+
+    .navbar {
+        min-height: 0;
+    }
+
+    .navbar-default {
+        border: none;
+        background: #fff;
+        background: rgba(255,255,255,0.9);
+    }
+
+    .nav>li>a {
+        padding: 35px 15px;
+    }
+
+    .navbar-nav>li>a {
+        line-height: normal;
+    }
+
+    .navbar-nav {
+        display: table;
+        float: none;
+        margin: 0 auto;
+        table-layout: fixed;
+        font-size: 1.25em;
+    }
+
+    .col-sm-4 {
+        padding: 5px;
+    }
+
+    .alsoView .col-sm-3 {
+    margin-top: 0px;
+    }
+
+    .product-img {
+    width: 540px;
+    height: 540px;
+    margin: 0 auto;
+    }
+
+    .fin-but {
+        height: 222px;
+    }
+
+    .fin-but>a>button {
+        margin-top: 20%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .carousel-inner>.item>a>img, .carousel-inner>.item>img, 
+    .img-responsive, .thumbnail a>img, .thumbnail>img {
+        max-height: 435px;
+    }  
+    .nav>li>a {
+        padding: 35px;
+    } 
+}
+@media screen and (min-width:1200px) {
+    .box:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    .carousel-inner>.item>a>img, .carousel-inner>.item>img, 
+    .img-responsive, .thumbnail a>img, .thumbnail>img {
+        max-height: 530px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .col-sm-4 {
+        padding: 10px;
+    }
+
+    .finance {
+    }
+
+}
+
+.modal-open {
+    padding-right: 0 !important;
+}
+.brand>a {
+    color: inherit;
+}
+
+.brand>a:hover {
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+}
+
+.product-ul {
+    font-size: 18px;
+}
+
+.glyphicon {
+    font-size: 16px;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    font: inherit;
+    color: inherit;
+}
+
+.map {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+
+.shadow {
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.alsoView>h3 {
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.alsoView>div>a>img {
+    width: 85%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    max-width: 500px;
+  
+}
+
+.gallery>div>a>img {
+    width: 360px;
+    height: 360px;
+    margin: 0 auto;
+}
+
+.gallery>div {
+    margin-bottom: 25px;
+}
+
+.promo>div>a>img {
+    width: 360px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.promo>div {
+    margin-bottom: 25px;
+}
+
+a {
+    color: inherit;
+}
+
+.mid>div>a>img {
+    margin: 0 auto;
+}
+
+.finance>img {
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.finance>button {
+margin-top: 20%;
+
+}
+
+.fa {
+    padding: 5px;
+}
+
+a>.fa-facebook-square:hover {
+    color: #3b5998;
+    transition: .5s;
+}
+
+a>.fa-instagram:hover {
+    color: #fb3958;
+    transition: .5s;
+}
+
+.price {
+    font-size: 60px;
+}
+
+.primary {
+    padding-top: 25px;
+}
