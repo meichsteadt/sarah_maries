@@ -2,7 +2,7 @@
 var store = document.getElementById("name");
 var mobile = document.getElementById("nameMobile");
 store.innerHTML = "Sarah Marie's Home Furnishings";
-mobile.innerHTML = store.innerHTML; 
+mobile.innerHTML = store.innerHTML;
 
 //sets the address at the top of the page
 var add = document.getElementById("address");
@@ -23,7 +23,7 @@ var max = 12; //whatever the last page is set it here. Make sure to change it in
 
 //gets the name of the page
 var path = window.location.pathname;
-var fullPage = path.split("/").pop();
+var fullPage = path.split("/").pop().split(".")[0];
 
 //returns the page number after product page name i.e. dining(1)
 var pageNumber = toNumber(fullPage);
@@ -31,23 +31,23 @@ var pageNumber = toNumber(fullPage);
 var page = fullPage.split(toNumber(fullPage)).shift();
 
 function browse(id) {
-//gets the elements next and prev		
+//gets the elements next and prev
 	var prev = document.getElementById("prev");
 	var next = document.getElementById("next");
 //if not the first page go to next page
 	if(pageNumber > 1) {
-		prev.href = page + (pageNumber-1);
+		prev.href = page + (pageNumber-1) + ".html";
 	}
 //otherwise go to max page on the href
 	else {
-		prev.href = page + max;
+		prev.href = page + max + ".html";
 	}
 //if last page go to first page
 	if(pageNumber == max) {
-		next.href = page + 1;
+		next.href = page + 1 + ".html";
 	}
 	else {
-		next.href = page + (pageNumber+1);
+		next.href = page + (pageNumber+1) + ".html";
 	}
 	return prev.href;
 
@@ -56,37 +56,37 @@ function browse(id) {
 function alsoView(id) {
 	//gets the elements next and prev
 		var prev = document.getElementById("alsoPrev");
-		var next = document.getElementById("alsoNext");	
+		var next = document.getElementById("alsoNext");
 		var plusTwo = document.getElementById("plusTwo");
-		var plusThree = document.getElementById("plusThree");	
+		var plusThree = document.getElementById("plusThree");
 	//if not the first page go to next page
 		if(pageNumber > 1) {
-			prev.href = page + (pageNumber-1);
+			prev.href = page + (pageNumber-1) + ".html";
 		}
 	//otherwise go to max page on the href
 		else {
-			prev.href = page + max;
+			prev.href = page + max + ".html";
 		}
 	//if last page go to first page
 		if(pageNumber == max) {
-			next.href = page + 1;
+			next.href = page + 1 + ".html";
 		}
 		else {
-			next.href = page + (pageNumber+1);
+			next.href = page + (pageNumber+1) + ".html";
 		}
 	//if 11th or higher loop around to beginning for plusTwo
 		if(pageNumber<(max-1)) {
-			plusTwo.href = page + (pageNumber +2);
+			plusTwo.href = page + (pageNumber +2) + ".html";
 		}
 		else {
-			plusTwo.href = page + (2-(max-pageNumber));
+			plusTwo.href = page + (2-(max-pageNumber)) + ".html";
 		}
 	//if 10th or higher loop around to beginning for plusThree
 		if (pageNumber < (max-2)) {
-			plusThree.href = page + (pageNumber + 3);
+			plusThree.href = page + (pageNumber + 3) + ".html";
 		}
 		else {
-			plusThree.href = page + (3-(max-pageNumber));
+			plusThree.href = page + (3-(max-pageNumber)) + ".html";
 		}
 
 }

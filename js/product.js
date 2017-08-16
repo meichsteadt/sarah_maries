@@ -1,9 +1,9 @@
 //gets the name of the page
 var path = window.location.pathname;
-var fullPage = path.split("/").pop();
+var fullPage = path.split("/").pop().split(".")[0];
 
 //whatever the last page is set it here. Make sure to change it in both JS files!
-var max = 12; 
+var max = 12;
 
 //sets var to the element with the productImage Id
 var productImage = document.getElementById('productImage');
@@ -39,9 +39,9 @@ function toNumber(arr) {
 function alsoViewImg(id) {
 	//gets the elements next and prev
 		var prev = document.getElementById("alsoPrev").childNodes[0];
-		var next = document.getElementById("alsoNext").childNodes[0];	
+		var next = document.getElementById("alsoNext").childNodes[0];
 		var plusTwo = document.getElementById("plusTwo").childNodes[0];
-		var plusThree = document.getElementById("plusThree").childNodes[0];	
+		var plusThree = document.getElementById("plusThree").childNodes[0];
 	//if not the first page go to next page
 		if(pageNumber > 1) {
 			prev.src = "img/products/" + productPrefix + "/" + productPrefix + (pageNumber - 1) + jpg;
